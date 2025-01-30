@@ -1,5 +1,3 @@
-# classification-with-cnn
-
 # Recycling Classifier
 
 This project is a deep learning-based system designed to classify recyclable materials in a video stream. It utilizes YOLO for object detection and a custom-trained CNN model to classify detected objects.
