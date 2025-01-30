@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recycling Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Recycling Classifier</h1>
+      <div class="upload-section">
+        <form id="upload-form">
+          <input type="file" id="video-upload" name="file" accept="video/*" />
+          <label for="video-upload" class="upload-label">Choose a video</label>
+          <button type="submit" class="submit-btn">Upload & Process</button>
+        </form>
+      </div>
+      <div class="video-section">
+        <img id="video-feed" src="" alt="Video feed" style="display: none"/>
+        <div id="status" class="status"></div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
